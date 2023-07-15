@@ -2,14 +2,14 @@ using FizzBuzz.Rules;
 
 namespace FizzBuzz.UnitTests;
 
-public class Tests
+public class FizzRuleTests
 {
 
     [Test]
     [TestCase(3)]
     [TestCase(6)]
     [TestCase(9)]
-    public void Number_Divisible_By_3_Returns_Fizz(int value)
+    public void Number_Divisible_By_3_Returns_True_For_Fizz(int value)
     {
         var fizzRule = new FizzRule();
 
