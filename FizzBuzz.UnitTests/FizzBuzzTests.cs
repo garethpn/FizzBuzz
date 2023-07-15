@@ -13,7 +13,7 @@ public class Tests
     {
         var fizzRule = new FizzRule();
 
-        var shouldPrintFizz = fizzRule.Run(3);
+        var shouldPrintFizz = fizzRule.Run(value);
 
         Assert.IsTrue(shouldPrintFizz);
     }
@@ -26,7 +26,7 @@ public class Tests
     {
         var fizzRule = new FizzRule();
 
-        var shouldPrintFizz = fizzRule.Run(3);
+        var shouldPrintFizz = fizzRule.Run(value);
 
         Assert.IsFalse(shouldPrintFizz);
     }
