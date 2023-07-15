@@ -10,11 +10,11 @@ public class BuzzRuleTests
     [TestCase(20)]
     public void Number_Divisible_By_5_Returns_True_For_Buzz(int value)
     {
-        var fizzRule = new BuzzRule();
+        var buzzRule = new BuzzRule();
 
-        var shouldPrintFizz = fizzRule.Run(value);
+        var shouldPrintBuzz = buzzRule.Run(value);
 
-        Assert.IsTrue(shouldPrintFizz);
+        Assert.IsTrue(shouldPrintBuzz);
     }
 
     [Test]
@@ -23,10 +23,10 @@ public class BuzzRuleTests
     [TestCase(45)]
     public void Number_Divisible_By_3_And_5_Returns_False_For_Buzz(int value)
     {
-        var fizzRule = new BuzzRule();
+        var buzzRule = new BuzzRule();
 
-        var shouldPrintFizz = fizzRule.Run(value);
+        var shouldPrintBuzz = buzzRule.Run(value);
 
-        Assert.IsFalse(shouldPrintFizz);
+        Assert.IsFalse(shouldPrintBuzz);
     }
 }
