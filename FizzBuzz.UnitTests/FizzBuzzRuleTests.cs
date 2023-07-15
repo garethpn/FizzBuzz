@@ -11,11 +11,11 @@ public class FizzBuzzRuleTests
     [TestCase(9)]
     public void Number_Divisible_By_3_Returns_False_For_FizzBuzz(int value)
     {
-        var fizzRule = new FizzRule();
+        var fizzBuzzRule = new FizzBuzzRule();
 
-        var shouldPrintFizz = fizzRule.Run(value);
+        var shouldPrintFizzBuzz = fizzBuzzRule.Run(value);
 
-        Assert.IsFalse(shouldPrintFizz);
+        Assert.IsFalse(shouldPrintFizzBuzz);
     }
     
     [Test]
@@ -41,6 +41,6 @@ public class FizzBuzzRuleTests
 
         var shouldPrintFizzBuzz = fizzBuzzRule.Run(value);
 
-        Assert.IsFalse(shouldPrintFizzBuzz);
+        Assert.IsTrue(shouldPrintFizzBuzz);
     }
 }
